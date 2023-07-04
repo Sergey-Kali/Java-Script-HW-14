@@ -27,7 +27,7 @@ class GithubAPI {
 
   getRepos() {
     const headers = {
-      Authorization: `Token ${this.token}`,
+      Authorization: `${this.token}`,
     };
 
     return fetch(`https://api.github.com/users/${this.username}/repos`, {
